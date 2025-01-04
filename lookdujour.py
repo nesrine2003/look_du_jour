@@ -56,7 +56,7 @@ def choisir_vetements_par_meteo(meteo, categories):
 # Interface utilisateur avec Streamlit
 st.title("Look du Jour 👗👔")
 
-city = st.text_input("Entrez le nom de votre ville :", "Alger")
+city = st.text_input("Entrez le nom de votre ville :", "Paris")
 
 if st.button("Générer Look"):
     meteo = get_weather(city)
