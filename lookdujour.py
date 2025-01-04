@@ -9,13 +9,13 @@ API_KEY = '0dfa745bce9027a692ecac8a8d9f1c2a'
 
 # Dictionnaire des catégories de vêtements
 categories = {  
-    "blouses": ["ARMOIRE/blouses/bl (1).jpg"],
-    "pentalons": ["ARMOIRE/pentalons/pen (1).jpg"],
-    "vestes et monteaux": ["ARMOIRE/vestes et monteaux/v&m (1).jpg"],
-    "chaussures": ["ARMOIRE/chaussures/ch (1).jpg"],
-    "tops": ["ARMOIRE/tops/top (1).jpg"],
-    "jupes": ["ARMOIRE/jupes/ju (1).jpg"],
-    "accessoires": ["ARMOIRE/accessoires/ac (1).jpg"]
+    "blouses": ["recommendation/ARMOIRE/blouses/bl (1).jpg"],
+    "pentalons": ["recommendation/ARMOIRE/pentalons/pen (1).jpg"],
+    "vestes et monteaux": ["recommendation/ARMOIRE/vestes et monteaux/v&m (1).jpg"],
+    "chaussures": ["recommendation/ARMOIRE/chaussures/ch (1).jpg"],
+    "tops": ["recommendation/ARMOIRE/tops/top (1).jpg"],
+    "jupes": ["recommendation/ARMOIRE/jupes/ju (1).jpg"],
+    "accessoires": ["recommendation/ARMOIRE/accessoires/ac (1).jpg"]
 }
 
 def get_weather(city):
@@ -74,4 +74,4 @@ if st.button("Générer Look"):
             if os.path.exists(vetement):
                 st.image(vetement, caption=f"Vêtement {i+1}", width=300)
             else:
-                st.warning(f"⚠ Image introuvable : {vetement}")
+                st.warning(f"⚠ Image introuvable : {vetement}"
